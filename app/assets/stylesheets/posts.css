@@ -1,0 +1,4 @@
+body { background-color: rgb(186, 158, 122);}
+
+.post {  background-color: aquamarine; border-radius: 0.4em; padding: 1em; margin: 0.5em; border: 1px solid black; }
+.post .lilnk { float: right; padding: 1em;}
