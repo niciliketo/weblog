@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on rails application
+This one is using [docked](https://github.com/rails/docked)
 
-Things you may want to cover:
+Once setup you can run the following commands:
 
-* Ruby version
+```bash
+# Start the application
+docked rails server
 
-* System dependencies
+# Run the tests
+docked rails test
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Create a view component
+docked rails g component MyComponent
+```
