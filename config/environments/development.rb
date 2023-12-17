@@ -73,4 +73,8 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  #dd: config.importmap.cache_sweepers << Rails.root.join("app/components") in config/environments/development.rb
+  # to get your view components controllers reloaded without the need to restart the server.
+  config.importmap.cache_sweepers << Rails.root.join("app/components")
 end

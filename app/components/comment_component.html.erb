@@ -1,0 +1,10 @@
+<%# app/components/comment_component.html.erb %>
+<my-comment comment-id="<%= comment[:id] %>">
+  <time slot="posted" datetime="<%= comment[:created_at].iso8601 %>"><%= comment[:created_at].strftime("%b %-d") %></time>
+
+  <div slot="avatar"><img src="avatar" /></div>
+
+  <div slot="author"><%= commenter_name %></div>
+
+  <div slot="body"><%= formatted_body %></div>
+</my-comment>
