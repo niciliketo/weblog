@@ -5,5 +5,5 @@
 <div id="posts">
 <%= render(PostComponent.with_collection(@posts)) %>
 </div>
-
+<%= render(CommentComponent.new(comment: {id: 1, body: 'WAAAAA', user: 'nic', created_at: Time.now})) %>
 <%= link_to "New post", new_post_path %>
