@@ -5,5 +5,13 @@
 <div id="posts">
 <%= render(PostComponent.with_collection(@posts)) %>
 </div>
-
+<%= render(PopupComponent.new(name: 'exampleModal', title: "Hello World")) do |component| %>
+  <% component.with_body do%>
+    <h1>I am here :-)</h1>
+  <% end %>
+<% end %>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
 <%= link_to "New post", new_post_path %>
